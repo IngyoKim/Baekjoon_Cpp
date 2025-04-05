@@ -2,6 +2,26 @@
     "tasks": [
         {
             "type": "cppbuild",
+            "label": "build-hidden-exe",
+            "command": "C:\\Program Files\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64msvcrt-12.0.0-r3\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}\\.vscode\\build.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Task to build C++ into hidden folder"
+        },
+        {
+            "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
             "command": "C:\\Program Files\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64msvcrt-12.0.0-r3\\mingw64\\bin\\g++.exe",
             "args": [
